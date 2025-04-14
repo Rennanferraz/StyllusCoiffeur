@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styllu's Coiffeur | Barbearia Masculina e Infantil</title>
+    <meta name="description" content="Styllu's Coiffeur | A melhor barbearia masculina e infantil do Catete!">
+    <meta name="keywords" content="barbearia, cabelo masculino, corte infantil, Catete">
+    <meta name="author" content="Renan Ferraz">
+    <meta name="copyright" content="© 2024 Styllu's Coiffeur">
+    <link rel="icon" href="Imagens/Logo_favicon.png" type="image/png">
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- SCRIPT MODAL -->
+    <script src="js/js_menu.js"></script>
+</head>
+
+<body>
+    <!-- HEADER e MENU FIXO -->
+    <header>
+        <nav>
+            <img class="logo" src="Imagens/Logo_horizontal.png" alt="Styllu's Coiffeur">
+            <button class="hamburguer" aria-label="Abrir menu">&#9776;</button>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#agendamento">Agendamento</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="titulo-principal">Styllu's Coiffeur</h1>
+            <p>A melhor barbearia masculina e infantil do Catete!</p>
+            <a class="btn" href="https://wa.me/552135925378">Agendar Agora</a>
+        </div>
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Localizada no coração do bairro do <span>Catete</span>, no Rio de Janeiro, a <span>Styllu's Coiffeur</span> oferece serviços de alta qualidade em um ambiente moderno e acolhedor. Nossa equipe é especializada em <span>cortes e cuidados masculinos e infantis.</span></p>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS E PREÇOS -->
+    <section id="servicos">
+        <h2 class="section-title">Tabela de Preços</h2>
+        <p class="section-subtitle">Confira nossos serviços e valores.</p>
+
+        <div class="cards-wrapper">
+            
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Corte Executivo</h5>
+                <p class="card-price">R$ 65,00</p>
+                <ul class="card-list">
+                <li>Lavagem com shampoo</li>
+                <li>Massagem capilar</li>
+                <li>Finalização com pomada</li>
+                </ul>
+                <a href="#agendamento" class="btn btn-primary">Agendar</a>
+            </div>
+            </div>
+
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Combo Cabelo + Barba</h5>
+                <p class="card-price">R$ 80,00</p>
+                <ul class="card-list">
+                <li>Corte moderno</li>
+                <li>Toalha quente na barba</li>
+                <li>Óleo hidratante</li>
+                </ul>
+                <a href="#agendamento" class="btn btn-primary">Agendar</a>
+            </div>
+            </div>
+
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Corte Infantil</h5>
+                <p class="card-price">R$ 65,00</p>
+                <ul class="card-list">
+                <li>Ambiente lúdico</li>
+                <li>Atendimento divertido</li>
+                <li>Brinde especial</li>
+                </ul>
+                <a href="#agendamento" class="btn btn-primary">Agendar</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FORMULÁRIO DE AGENDAMENTO -->
+    <section id="agendamento">
+        <div class="container">
+            <h2 class="section-title">Agendamento</h2>
+            <p class="section-subtitle">Preencha o formulário e agende seu atendimento.</p>
+            <form id="form-agendamento" method="POST">
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+            
+                <select id="barbeiro" name="barbeiro" required>
+                    <option value="">Selecione o Barbeiro</option>
+                    <option value="Barbeiro 1">Barbeiro 1</option>
+                    <option value="Barbeiro 2">Barbeiro 2</option>
+                    <option value="Barbeiro 2">Barbeiro 3</option>
+                    <option value="Barbeiro 2">Barbeiro 4</option>
+                    <option value="Barbeiro 2">Barbeiro 5</option>
+                </select>
+                <input type="datetime-local" id="dataHora" name="dataHora" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+      
+
+    <!-- GALERIA -->
+    <section id="galeria">
+        <div class="container">
+            <h2 class="section-title">Galeria</h2>
+            <p class="section-subtitle">Confira nossas fotos e conheça o ambiente.</p>
+            <div class="galeria-grid">
+                <img src="Imagens/Foto1.png" alt="Imagem 1" class="foto-galeria">
+                <img src="Imagens/Foto2.png" alt="Imagem 2" class="foto-galeria">
+                <img src="Imagens/Foto3.png" alt="Imagem 3" class="foto-galeria">
+                <img src="Imagens/Foto4.png" alt="Imagem 4" class="foto-galeria">
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div id="modal-galeria" class="modal">
+            <span class="fechar-modal">&times;</span>
+            <img class="modal-conteudo" id="img-modal">
+
+            <!-- Botões de navegação -->
+            <button class="btn-anterior">&#10094;</button>
+            <button class="btn-proximo">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao">
+        <div class="container">
+            <h2>Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.5950745823648!2d-43.1800081239329!3d-22.928301638641763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f80fdf1a19d%3A0x9ebdd32248ec9bf6!2sStyllu&#39;s%20coiffeurs%20Catete!5e0!3m2!1spt-BR!2sbr!4v1744070773420!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="rodape">
+   
+            <!-- Ícones das redes sociais -->
+            <div class="rodape_redes">
+                <a href="https://www.instagram.com/stylluscatete2/" target="_blank">
+                    <img src="Imagens/Instagram.png" alt="Instagram" class="icon">
+                </a>
+                <a href="https://www.facebook.com/Stylluscoiffeurs/" target="_blank">
+                    <img src="Imagens/Facebook.png" alt="Facebook" class="icon">
+                </a>
+            </div>
+            
+        </div>
+    </footer>
+    <!-- Botão WhatsApp Flutuante -->
+<a class="btn-whatsapp" href="https://wa.me/552135925378" target="_blank" aria-label="Conversar pelo WhatsApp">
+    <img src="Imagens/Whatsapp.png" alt="WhatsApp">
+</a>
+    
+    <!-- SCRIPT MODAL -->
+    <script src="js/js_modal.js"></script>
+
+    <!-- SCRIPT FORMULÁRIO -->
+    <script src="js/js_form.js"></script>
+</body>
+</html>
